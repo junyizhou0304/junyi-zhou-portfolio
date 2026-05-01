@@ -2,15 +2,15 @@
   color-scheme: light;
   font-family: 'Inter', system-ui, sans-serif;
   font-size: 18px;
-  color: #1d1d1f;
-  background: #ffffff;
-  --surface: #ffffff;
-  --surface-strong: #f5f5f7;
-  --surface-muted: #e5e5e7;
-  --accent: #0071e3;
-  --accent-soft: #f2f2f2;
-  --text-muted: #86868b;
-  --border: rgba(0, 0, 0, 0.1);
+  color: #1F2937;
+  background: #F8FAFC;
+  --surface: #FFFFFF;
+  --surface-strong: #E0F2FE;
+  --surface-muted: #F8FAFC;
+  --accent: #2563EB;
+  --accent-soft: #E0F2FE;
+  --text-muted: #64748B;
+  --border: #E5E7EB;
 }
 
 * {
@@ -24,7 +24,7 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background: #ffffff;
+  background: #F8FAFC;
 }
 
 img {
@@ -52,9 +52,9 @@ textarea {
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(255, 255, 255, 0.96);
+  background: rgba(15, 23, 42, 0.96);
   backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid #E5E7EB;
 }
 
 .header-inner,
@@ -69,6 +69,7 @@ textarea {
 .brand {
   font-size: 1.2rem;
   font-weight: 700;
+  color: #FFFFFF;
 }
 
 .site-nav {
@@ -78,13 +79,13 @@ textarea {
 }
 
 .site-nav a {
-  color: #1d1d1f;
+  color: #FFFFFF;
   font-weight: 500;
   transition: color 0.2s ease;
 }
 
 .site-nav a:hover {
-  color: var(--accent);
+  color: #D4A017;
 }
 
 .nav-toggle {
@@ -100,7 +101,7 @@ textarea {
 .nav-toggle span {
   width: 1.4rem;
   height: 2px;
-  background: #1d1d1f;
+  background: #FFFFFF;
   border-radius: 999px;
 }
 
@@ -109,7 +110,7 @@ textarea {
 }
 
 .section-light {
-  background: #f5f5f7;
+  background: #F8FAFC;
 }
 
 .hero {
@@ -181,9 +182,9 @@ textarea {
 }
 
 .button.secondary {
-  border-color: var(--border);
-  color: #1d1d1f;
-  background: #fff;
+  border-color: #E5E7EB;
+  color: #1F2937;
+  background: #FFFFFF;
 }
 
 .hero-panel {
@@ -233,8 +234,22 @@ textarea {
   border-radius: 20px;
   padding: 0.8rem 1.2rem;
   font-size: 1rem;
-  color: #0071e3;
+  color: var(--accent);
   text-align: center;
+}
+
+
+.stat-icon {
+  width: 3rem;
+  height: 3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .section-grid {
@@ -376,7 +391,7 @@ textarea {
   padding: 1.5rem;
   text-align: center;
   font-weight: 500;
-  color: #1d1d1f;
+  color: #1F2937;
   font-size: 1rem;
   transition: transform 0.3s ease;
 }
@@ -399,7 +414,7 @@ textarea {
 }
 
 .contact-details a {
-  color: #1d1d1f;
+  color: #1F2937;
   font-weight: 500;
   font-size: 1.1rem;
   transition: color 0.3s ease;
